@@ -1,28 +1,29 @@
 {
   "projetos": [
-    {
-      "id": "EXEMPLO-001",
-      "slug": "monitoramento-esp32",
-      "titulo": "Monitoramento de variáveis com ESP32",
-      "area": "Sistemas embarcados",
-      "situacao": "Concluído",
-      "resumo": "Exemplo fictício de sistema didático para ler sensores e apresentar dados em uma interface de monitoramento.",
-      "tecnologias": [
-        "ESP32",
-        "Arduino",
-        "Sensores",
-        "IoT"
-      ],
-      "palavrasChave": [
-        "temperatura",
-        "telemetria",
-        "microcontrolador"
-      ],
-      "simbolo": "⌁",
-      "cor": 1,
-      "exemploFicticio": true,
-      "pagina": "projetos/modelo-tcc/"
-    },
+    
+{
+  "id": "IND-2026-001",
+  "slug": "projeto-industrial-2-2026",
+  "titulo": "Projeto de Automação Industrial — Turma 2/2026",
+  "area": "Automação industrial",
+  "situacao": "Em desenvolvimento",
+  "resumo": "Projeto técnico desenvolvido pelos alunos da área industrial. Consulte a pasta pública para acompanhar a documentação, os registros de desenvolvimento, os códigos e os materiais do projeto.",
+  "tecnologias": [
+    "Automação industrial",
+    "Eletricidade",
+    "Projetos técnicos"
+  ],
+  "palavrasChave": [
+    "TCC",
+    "projeto industrial",
+    "documentação",
+    "turma 2 2026"
+  ],
+  "simbolo": "⚙",
+  "cor": 2,
+  "exemploFicticio": false,
+  "pagina": "https://drive.google.com/drive/folders/1OwjkGJR2G5zoaTR2WaYjdsbFULOZl3EO?usp=drive_link"
+},
     {
       "id": "EXEMPLO-002",
       "slug": "painel-automacao",
