@@ -24,30 +24,30 @@
   "exemploFicticio": false,
   "pagina": "https://drive.google.com/drive/folders/1OwjkGJR2G5zoaTR2WaYjdsbFULOZl3EO?usp=drive_link"
 },
-    {
-      "id": "EXEMPLO-002",
-      "slug": "painel-automacao",
-      "titulo": "Painel didático de automação industrial",
-      "area": "Automação industrial",
-      "situacao": "Em desenvolvimento",
-      "resumo": "Exemplo fictício de painel para estudar entradas, saídas, sensores e comandos de um processo automatizado.",
-      "tecnologias": [
-        "CLP",
-        "IHM",
-        "Sensores",
-        "Comandos elétricos"
-      ],
-      "palavrasChave": [
-        "painel",
-        "controle",
-        "lógica",
-        "acionamento"
-      ],
-      "simbolo": "⚙",
-      "cor": 2,
-      "exemploFicticio": true,
-      "pagina": "projetos/modelo-tcc/"
-    },
+    
+{
+  "id": "ELE-2026-001",
+  "slug": "projeto-eletronica-2-2026",
+  "titulo": "Projeto de Eletrônica — Turma 2/2026",
+  "area": "Eletrônica e controle",
+  "situacao": "Em desenvolvimento",
+  "resumo": "Projeto técnico desenvolvido pelos alunos da área de Eletrônica. Consulte a pasta pública para acessar os documentos, registros, códigos e materiais disponibilizados pela equipe.",
+  "tecnologias": [
+    "Eletrônica",
+    "Circuitos elétricos",
+    "Instrumentação"
+  ],
+  "palavrasChave": [
+    "TCC",
+    "projeto de eletrônica",
+    "documentação",
+    "turma 2 2026"
+  ],
+  "simbolo": "⌬",
+  "cor": 3,
+  "exemploFicticio": false,
+  "pagina": "https://drive.google.com/drive/folders/1RrFJOo1yhNoOdAiRv_QM76L_8xlXMpft?usp=sharing"
+},
     {
       "id": "EXEMPLO-003",
       "slug": "monitoramento-energia",
