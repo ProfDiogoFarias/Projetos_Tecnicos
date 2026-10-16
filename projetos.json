@@ -48,29 +48,31 @@
   "exemploFicticio": false,
   "pagina": "https://drive.google.com/drive/folders/1RrFJOo1yhNoOdAiRv_QM76L_8xlXMpft?usp=sharing"
 },
-    {
-      "id": "EXEMPLO-003",
-      "slug": "monitoramento-energia",
-      "titulo": "Monitoramento do consumo de energia",
-      "area": "Eficiência energética",
-      "situacao": "Em avaliação",
-      "resumo": "Exemplo fictício de proposta para acompanhar grandezas elétricas e identificar oportunidades de economia.",
-      "tecnologias": [
-        "Energia elétrica",
-        "Sensores",
-        "Dashboard"
-      ],
-      "palavrasChave": [
-        "consumo",
-        "medição",
-        "economia",
-        "eficiência"
-      ],
-      "simbolo": "ϟ",
-      "cor": 3,
-      "exemploFicticio": true,
-      "pagina": "projetos/modelo-tcc/"
-    },
+    
+{
+  "id": "PRE-2026-001",
+  "slug": "projeto-predial-2-2026",
+  "titulo": "Projeto de Instalações Elétricas Prediais — Turma 2/2026",
+  "area": "Instalações elétricas prediais",
+  "situacao": "Em desenvolvimento",
+  "resumo": "Projetos técnicos desenvolvidos pelos alunos da área de instalações elétricas prediais. Consulte a pasta compartilhada para acompanhar a documentação, os registros de desenvolvimento, os cálculos e os materiais disponibilizados pela equipe.",
+  "tecnologias": [
+    "Instalações elétricas",
+    "Comandos elétricos",
+    "Projetos técnicos"
+  ],
+  "palavrasChave": [
+    "TCC",
+    "projeto predial",
+    "instalações elétricas",
+    "documentação",
+    "turma 2 2026"
+  ],
+  "simbolo": "⌂",
+  "cor": 1,
+  "exemploFicticio": false,
+  "pagina": "https://drive.google.com/drive/folders/1j_uv2-BcQVe30xLelZzCbXNfGago-WdX?usp=sharing"
+},
     {
       "id": "EXEMPLO-004",
       "slug": "supervisorio-modbus",
