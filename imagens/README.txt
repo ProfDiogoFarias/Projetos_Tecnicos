@@ -1,0 +1,1 @@
+Coloque aqui imagens próprias dos protótipos, diagramas e capas autorizadas. Atualize os caminhos nas páginas dos projetos.

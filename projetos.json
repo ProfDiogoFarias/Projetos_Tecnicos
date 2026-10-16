@@ -1,0 +1,146 @@
+{
+  "projetos": [
+    {
+      "id": "EXEMPLO-001",
+      "slug": "monitoramento-esp32",
+      "titulo": "Monitoramento de variáveis com ESP32",
+      "area": "Sistemas embarcados",
+      "situacao": "Concluído",
+      "resumo": "Exemplo fictício de sistema didático para ler sensores e apresentar dados em uma interface de monitoramento.",
+      "tecnologias": [
+        "ESP32",
+        "Arduino",
+        "Sensores",
+        "IoT"
+      ],
+      "palavrasChave": [
+        "temperatura",
+        "telemetria",
+        "microcontrolador"
+      ],
+      "simbolo": "⌁",
+      "cor": 1,
+      "exemploFicticio": true,
+      "pagina": "projetos/modelo-tcc/"
+    },
+    {
+      "id": "EXEMPLO-002",
+      "slug": "painel-automacao",
+      "titulo": "Painel didático de automação industrial",
+      "area": "Automação industrial",
+      "situacao": "Em desenvolvimento",
+      "resumo": "Exemplo fictício de painel para estudar entradas, saídas, sensores e comandos de um processo automatizado.",
+      "tecnologias": [
+        "CLP",
+        "IHM",
+        "Sensores",
+        "Comandos elétricos"
+      ],
+      "palavrasChave": [
+        "painel",
+        "controle",
+        "lógica",
+        "acionamento"
+      ],
+      "simbolo": "⚙",
+      "cor": 2,
+      "exemploFicticio": true,
+      "pagina": "projetos/modelo-tcc/"
+    },
+    {
+      "id": "EXEMPLO-003",
+      "slug": "monitoramento-energia",
+      "titulo": "Monitoramento do consumo de energia",
+      "area": "Eficiência energética",
+      "situacao": "Em avaliação",
+      "resumo": "Exemplo fictício de proposta para acompanhar grandezas elétricas e identificar oportunidades de economia.",
+      "tecnologias": [
+        "Energia elétrica",
+        "Sensores",
+        "Dashboard"
+      ],
+      "palavrasChave": [
+        "consumo",
+        "medição",
+        "economia",
+        "eficiência"
+      ],
+      "simbolo": "ϟ",
+      "cor": 3,
+      "exemploFicticio": true,
+      "pagina": "projetos/modelo-tcc/"
+    },
+    {
+      "id": "EXEMPLO-004",
+      "slug": "supervisorio-modbus",
+      "titulo": "Supervisório didático com Modbus TCP",
+      "area": "Comunicação industrial",
+      "situacao": "Em desenvolvimento",
+      "resumo": "Exemplo fictício de integração entre controlador, registradores e uma interface de supervisão.",
+      "tecnologias": [
+        "Modbus TCP",
+        "ESP32",
+        "Supervisório",
+        "Ethernet"
+      ],
+      "palavrasChave": [
+        "rede",
+        "registradores",
+        "coils",
+        "holding registers"
+      ],
+      "simbolo": "⇄",
+      "cor": 4,
+      "exemploFicticio": true,
+      "pagina": "projetos/modelo-tcc/"
+    },
+    {
+      "id": "EXEMPLO-005",
+      "slug": "irrigacao-inteligente",
+      "titulo": "Sistema de irrigação automatizada",
+      "area": "IoT e sistemas inteligentes",
+      "situacao": "Concluído",
+      "resumo": "Exemplo fictício de protótipo que combina leitura de umidade, lógica de acionamento e sinalização de estados.",
+      "tecnologias": [
+        "Arduino",
+        "Sensor de umidade",
+        "Relé",
+        "Automação"
+      ],
+      "palavrasChave": [
+        "água",
+        "bomba",
+        "jardim",
+        "sensor"
+      ],
+      "simbolo": "◉",
+      "cor": 5,
+      "exemploFicticio": true,
+      "pagina": "projetos/modelo-tcc/"
+    },
+    {
+      "id": "EXEMPLO-006",
+      "slug": "bancada-eletronica",
+      "titulo": "Bancada de testes de circuitos eletrônicos",
+      "area": "Eletrônica e controle",
+      "situacao": "Em avaliação",
+      "resumo": "Exemplo fictício de bancada didática para organizar testes, registrar medições e documentar resultados.",
+      "tecnologias": [
+        "Eletrônica",
+        "Instrumentação",
+        "Multímetro",
+        "Osciloscópio"
+      ],
+      "palavrasChave": [
+        "circuitos",
+        "medição",
+        "protótipo",
+        "laboratório"
+      ],
+      "simbolo": "⌬",
+      "cor": 6,
+      "exemploFicticio": true,
+      "pagina": "projetos/modelo-tcc/"
+    }
+  ]
+}
