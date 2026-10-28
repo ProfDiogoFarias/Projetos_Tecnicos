@@ -1,37 +1,283 @@
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Biblioteca pública de projetos técnicos e TCCs.">
-<meta name="theme-color" content="#101827">
-<title>Biblioteca de Projetos Técnicos</title>
-<link rel="stylesheet" href="css/estilo.css"><script src="js/biblioteca.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Biblioteca de Projetos Técnicos organizada pelo Professor Diogo Farias. Consulte projetos de Eletrônica, Automação Industrial e Instalações Elétricas Prediais.">
+
+  <meta name="theme-color" content="#101827">
+
+  <title>Professor Diogo Farias | Biblioteca de Projetos Técnicos</title>
+
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/biblioteca.js" defer></script>
 </head>
+
 <body>
-<a class="skip" href="#catalogo">Pular para os projetos</a>
-<header class="topbar"><div class="wrap nav"><a class="brand" href="./"><span class="logo">⌘</span><span>Biblioteca de<br><strong>Projetos Técnicos</strong></span></a><nav><a href="#catalogo">Projetos</a><a href="#sobre">Sobre</a></nav></div></header>
-<main>
-<section class="hero"><div class="gridbg"></div><div class="wrap hero-inner">
-<p class="eyebrow">● CONHECIMENTO TÉCNICO COMPARTILHADO</p><h1>Ideias que viram<br><span>projetos reais.</span></h1>
-<p class="intro">Explore trabalhos técnicos, protótipos, automação, eletrônica e soluções desenvolvidas por meio de pesquisa e experimentação.</p>
-<a class="btn btn-bright" href="#catalogo">Explorar projetos ↓</a>
-<div class="stats"><div><strong id="total-projetos">—</strong><span>projetos no catálogo</span></div><div><strong id="total-areas">—</strong><span>áreas técnicas</span></div><div><strong>Aberto</strong><span>consulta gratuita</span></div></div>
-</div><div class="ring ring1"></div><div class="ring ring2"></div></section>
-<section class="wrap catalog" id="catalogo">
-<div class="section-head"><div><p class="eyebrow light">CATÁLOGO DE PROJETOS</p><h2>Encontre uma ideia para desenvolver.</h2><p class="muted">Pesquise por assunto ou combine os filtros.</p></div><span class="count" id="contador-resultados">Carregando…</span></div>
-<div class="filters-panel"><label class="search"><span aria-hidden="true">⌕</span><input id="busca" type="search" placeholder="Buscar por título, tema ou tecnologia…" autocomplete="off"></label>
-<div class="filters">
-<label>Área técnica<select id="filtro-area"><option value="">Todas as áreas</option></select></label>
-<label>Tecnologia<select id="filtro-tecnologia"><option value="">Todas as tecnologias</option></select></label>
-<label>Situação<select id="filtro-situacao"><option value="">Todas as situações</option><option>Em desenvolvimento</option><option>Em avaliação</option><option>Concluído</option></select></label>
-<button class="clear" id="limpar-filtros" type="button">Limpar filtros ↺</button>
-</div></div>
-<div class="chips" id="atalhos-areas" aria-label="Atalhos por área"></div>
-<div class="cards" id="grade-projetos" aria-live="polite"><div class="empty">Carregando catálogo…</div></div>
-<div class="empty hidden" id="sem-resultados"><h3>Nenhum projeto encontrado</h3><p>Tente outro termo ou remova algum filtro.</p><button class="btn btn-dark" id="limpar-sem-resultados" type="button">Limpar pesquisa</button></div>
-</section>
-<section class="about" id="sobre"><div class="wrap about-grid"><div class="about-logo">⌘</div><div><p class="eyebrow light">SOBRE A BIBLIOTECA</p><h2>Conhecimento organizado para continuar evoluindo.</h2><p>Este portal reúne referências e projetos técnicos para facilitar a consulta, o estudo e o compartilhamento de conhecimento. Cada projeto pode apresentar objetivo, tecnologias, documentação, imagens e resultados.</p></div><aside><strong>Quer consultar um projeto?</strong><p>Abra um cartão para conhecer os detalhes e acessar os materiais disponibilizados.</p><a href="#catalogo">Voltar ao catálogo ↑</a></aside></div></section>
-</main>
-<footer><div class="wrap footer"><a class="brand" href="./"><span class="logo">⌘</span><span>Biblioteca de<br><strong>Projetos Técnicos</strong></span></a><p>Compartilhamento de conhecimento técnico · <span id="ano-atual"></span></p></div></footer>
-<noscript><p class="noscript">Ative o JavaScript para carregar os projetos e usar os filtros.</p></noscript>
-</body></html>
+
+  <a class="skip" href="#catalogo">Pular para os projetos</a>
+
+  <header class="topbar">
+    <div class="wrap nav">
+
+      <a class="brand" href="./" aria-label="Página inicial — Professor Diogo Farias">
+        <span class="logo">DF</span>
+        <span>
+          Professor
+          <br>
+          <strong>Diogo Farias</strong>
+        </span>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <a href="#catalogo">Projetos</a>
+        <a href="#sobre">Sobre o portal</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="gridbg"></div>
+
+      <div class="wrap hero-inner">
+
+        <p class="eyebrow">
+          ● FORMAÇÃO TÉCNICA · CONHECIMENTO · INOVAÇÃO
+        </p>
+
+        <h1>
+          Ideias que viram
+          <br>
+          <span>projetos reais.</span>
+        </h1>
+
+        <p class="intro">
+          Bem-vindo à Biblioteca de Projetos Técnicos do Professor Diogo Farias.
+          Um espaço dedicado à organização, consulta e valorização de projetos
+          desenvolvidos na formação técnica, reunindo conhecimentos, aplicações
+          práticas e soluções para desafios reais.
+        </p>
+
+        <a class="btn btn-bright" href="#catalogo">
+          Explorar projetos ↓
+        </a>
+
+        <div class="stats">
+
+          <div>
+            <strong id="total-projetos">—</strong>
+            <span>projetos no catálogo</span>
+          </div>
+
+          <div>
+            <strong id="total-areas">—</strong>
+            <span>áreas técnicas</span>
+          </div>
+
+          <div>
+            <strong>Aberto</strong>
+            <span>consulta gratuita</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="ring ring1"></div>
+      <div class="ring ring2"></div>
+
+    </section>
+
+    <section class="wrap catalog" id="catalogo">
+
+      <div class="section-head">
+
+        <div>
+          <p class="eyebrow light">CATÁLOGO DE PROJETOS</p>
+
+          <h2>Conhecimento aplicado à prática.</h2>
+
+          <p class="muted">
+            Pesquise projetos por assunto ou combine os filtros para encontrar
+            conteúdos de seu interesse.
+          </p>
+        </div>
+
+        <span class="count" id="contador-resultados">
+          Carregando…
+        </span>
+
+      </div>
+
+      <div class="filters-panel">
+
+        <label class="search">
+          <span aria-hidden="true">⌕</span>
+
+          <input
+            id="busca"
+            type="search"
+            placeholder="Buscar por título, tema ou tecnologia…"
+            autocomplete="off"
+          >
+        </label>
+
+        <div class="filters">
+
+          <label>
+            Área técnica
+            <select id="filtro-area">
+              <option value="">Todas as áreas</option>
+            </select>
+          </label>
+
+          <label>
+            Tecnologia
+            <select id="filtro-tecnologia">
+              <option value="">Todas as tecnologias</option>
+            </select>
+          </label>
+
+          <label>
+            Situação
+            <select id="filtro-situacao">
+              <option value="">Todas as situações</option>
+              <option>Em desenvolvimento</option>
+              <option>Em avaliação</option>
+              <option>Concluído</option>
+            </select>
+          </label>
+
+          <button class="clear" id="limpar-filtros" type="button">
+            Limpar filtros ↺
+          </button>
+
+        </div>
+
+      </div>
+
+      <div
+        class="chips"
+        id="atalhos-areas"
+        aria-label="Atalhos por área"
+      ></div>
+
+      <div
+        class="cards"
+        id="grade-projetos"
+        aria-live="polite"
+      >
+        <div class="empty">Carregando catálogo…</div>
+      </div>
+
+      <div class="empty hidden" id="sem-resultados">
+
+        <h3>Nenhum projeto encontrado</h3>
+
+        <p>
+          Tente outro termo ou remova algum filtro para ampliar sua pesquisa.
+        </p>
+
+        <button
+          class="btn btn-dark"
+          id="limpar-sem-resultados"
+          type="button"
+        >
+          Limpar pesquisa
+        </button>
+
+      </div>
+
+    </section>
+
+    <section class="about" id="sobre">
+
+      <div class="wrap about-grid">
+
+        <div class="about-logo">DF</div>
+
+        <div>
+
+          <p class="eyebrow light">SOBRE O PORTAL</p>
+
+          <h2>
+            Projetos técnicos, conhecimento compartilhado e desenvolvimento profissional.
+          </h2>
+
+          <p>
+            A Biblioteca de Projetos Técnicos é um espaço organizado pelo
+            Professor Diogo Farias para facilitar a consulta, o estudo e o
+            compartilhamento de trabalhos desenvolvidos na formação técnica.
+          </p>
+
+          <p>
+            O portal reúne projetos de diferentes áreas tecnológicas e
+            direciona os visitantes aos materiais disponibilizados para
+            consulta, contribuindo para a troca de experiências, a pesquisa
+            e o desenvolvimento de novas ideias.
+          </p>
+
+          <p>
+            <strong>Responsável pela organização e orientação:</strong>
+            Professor Diogo Farias.
+          </p>
+
+        </div>
+
+        <aside>
+
+          <strong>Explore os projetos</strong>
+
+          <p>
+            Consulte os trabalhos disponíveis e conheça suas propostas,
+            tecnologias, documentação e soluções desenvolvidas.
+          </p>
+
+          <a href="#catalogo">Acessar catálogo ↑</a>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="wrap footer">
+
+      <a class="brand" href="./">
+        <span class="logo">DF</span>
+
+        <span>
+          Biblioteca de
+          <br>
+          <strong>Projetos Técnicos</strong>
+        </span>
+      </a>
+
+      <p>
+        Organização e orientação: Professor Diogo Farias
+        <br>
+        Compartilhamento de conhecimento técnico ·
+        <span id="ano-atual"></span>
+      </p>
+
+    </div>
+
+  </footer>
+
+  <noscript>
+    <p class="noscript">
+      Ative o JavaScript para carregar os projetos e utilizar os filtros.
+    </p>
+  </noscript>
+
+</body>
+</html>
