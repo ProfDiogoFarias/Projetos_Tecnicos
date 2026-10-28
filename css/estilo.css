@@ -202,3 +202,147 @@ input:focus-visible {
     animation-duration: 0.01ms !important;
   }
 }
+
+
+/* ==========================================
+   ENGENHARIA DIGITAL ABSTRATA
+   Professor Diogo Farias
+   ========================================== */
+
+/* Profundidade e iluminação do painel inicial */
+.hero {
+  isolation: isolate;
+  background:
+    radial-gradient(
+      circle at 78% 35%,
+      rgba(139, 92, 246, 0.24),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 92% 80%,
+      rgba(99, 102, 241, 0.16),
+      transparent 30%
+    ),
+    linear-gradient(115deg, #101827, #191b38 62%, #251b42);
+}
+
+/* Grade técnica em movimento */
+.gridbg {
+  opacity: 0.20;
+  background-image:
+    linear-gradient(rgba(196, 181, 253, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(196, 181, 253, 0.15) 1px, transparent 1px);
+  background-size: 44px 44px;
+  animation: grade-digital 28s linear infinite;
+}
+
+/* Anéis digitais com movimento lento */
+.ring {
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+.ring1 {
+  animation: pulso-digital 9s ease-in-out infinite;
+}
+
+.ring2 {
+  animation: orbita-digital 18s ease-in-out infinite;
+}
+
+/* Pontos de luz decorativos */
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 18%;
+  right: 13%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(196, 181, 253, 0.14) 0%,
+    rgba(139, 92, 246, 0.07) 35%,
+    transparent 72%
+  );
+  filter: blur(3px);
+  animation: brilho-digital 7s ease-in-out infinite;
+}
+
+/* Mantém o conteúdo acima dos elementos decorativos */
+.hero-inner {
+  z-index: 2;
+}
+
+/* Animações suaves */
+@keyframes grade-digital {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 44px 44px;
+  }
+}
+
+@keyframes pulso-digital {
+  0%, 100% {
+    opacity: 0.55;
+    transform: rotate(-25deg) scale(0.98);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(-22deg) scale(1.03);
+  }
+}
+
+@keyframes orbita-digital {
+  0%, 100% {
+    opacity: 0.45;
+    transform: rotate(-25deg) scale(1);
+  }
+
+  50% {
+    opacity: 0.85;
+    transform: rotate(-19deg) scale(1.035);
+  }
+}
+
+@keyframes brilho-digital {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+/* Adaptação para celulares */
+@media (max-width: 600px) {
+  .hero::after {
+    top: 12%;
+    right: -55px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .gridbg {
+    background-size: 32px 32px;
+  }
+}
+
+/* Respeita quem prefere movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .gridbg,
+  .ring1,
+  .ring2,
+  .hero::after {
+    animation: none !important;
+  }
+}
