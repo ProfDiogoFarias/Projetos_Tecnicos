@@ -9,3 +9,196 @@
 .about{padding:60px 0;background:#eaf0f8;border-top:1px solid #dfe7f1}.about-grid{display:grid;grid-template-columns:65px minmax(0,1.5fr) minmax(210px,.8fr);gap:27px;align-items:start}.about-logo{display:grid;place-items:center;width:60px;height:60px;border-radius:17px;background:#17243a;color:var(--cyan);font-size:2rem;font-weight:900}.about p:not(.eyebrow){color:#586780}.about aside{padding:19px;background:white;border:1px solid #dce4ef;border-radius:14px}.about aside p{font-size:.84rem}.about aside a{color:#315fa8;font-size:.83rem;font-weight:800;text-decoration:none}footer{padding:22px 0;background:#101827;color:#a9b5c8}.footer{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer p{font-size:.78rem}.noscript{padding:15px;background:#fff0d2;color:#694b13;text-align:center}
 @media(max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.clear{grid-column:span 2}.about-grid{grid-template-columns:55px 1fr}.about aside{grid-column:2}}
 @media(max-width:600px){.wrap{width:calc(100% - 28px)}.nav{min-height:66px}.nav nav{gap:13px;font-size:.8rem}.nav nav a:last-child{display:none}.brand{font-size:.76rem}.logo{width:33px;height:33px}.hero-inner{padding:52px 0 42px}.hero h1{font-size:clamp(2.55rem,13vw,3.8rem)}.intro{font-size:.96rem}.stats{gap:19px;margin-top:36px}.stats strong{font-size:1rem}.stats span{font-size:.68rem}.catalog{padding:43px 0 50px}.section-head{align-items:start;flex-direction:column;gap:12px}.section-head h2{font-size:1.9rem}.filters-panel{padding:12px}.filters{grid-template-columns:1fr}.clear{grid-column:auto}.cards{grid-template-columns:1fr;gap:14px}.cover{min-height:128px}.about-grid{grid-template-columns:1fr;gap:15px}.about aside{grid-column:auto}.about-logo{width:51px;height:51px}.footer{align-items:flex-start;flex-direction:column;gap:10px}.footer p{margin:0}}
+
+/* =========================================
+   IDENTIDADE VISUAL — PROFESSOR DIOGO FARIAS
+   ========================================= */
+
+:root {
+  --blue: #8b5cf6;
+  --cyan: #c4b5fd;
+}
+
+/* Marca e identidade do professor */
+.logo {
+  background: linear-gradient(135deg, #a78bfa, #7c3aed);
+  color: #ffffff;
+  font-size: 0.95rem;
+  letter-spacing: -0.04em;
+  box-shadow: 0 4px 14px #8b5cf625;
+}
+
+/* Cabeçalho */
+.topbar {
+  background: rgba(16, 24, 39, 0.97);
+  border-bottom: 1px solid #a78bfa35;
+}
+
+.nav nav a {
+  transition: color 0.2s ease;
+}
+
+.nav nav a:hover {
+  color: #c4b5fd;
+}
+
+/* Apresentação principal */
+.hero {
+  background:
+    radial-gradient(ellipse at 82% 15%, #8b5cf635, transparent 38%),
+    linear-gradient(115deg, #101827, #19213b 68%, #30204b);
+}
+
+.eyebrow {
+  color: #c4b5fd;
+}
+
+.hero h1 span {
+  color: #c4b5fd;
+}
+
+.btn-bright {
+  background: linear-gradient(135deg, #c4b5fd, #a78bfa);
+  color: #21143d;
+  box-shadow: 0 6px 22px #8b5cf625;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-bright:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px #8b5cf640;
+}
+
+/* Elementos gráficos de fundo */
+.ring {
+  border-color: #a78bfa35;
+}
+
+.ring2 {
+  border-color: #8b5cf630;
+}
+
+/* Títulos das seções */
+.light {
+  color: #7650c9;
+}
+
+/* Campo de pesquisa */
+.search:focus-within {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px #8b5cf620;
+}
+
+/* Botões de filtros */
+.clear {
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.clear:hover {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.chip:hover,
+.chip.active {
+  background: #5b21b6;
+  border-color: #5b21b6;
+  color: #ffffff;
+}
+
+/* Cartões de projetos */
+.project-card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #c4b5fd;
+  box-shadow: 0 14px 38px #5b21b618;
+}
+
+.cover {
+  background: linear-gradient(135deg, #21163d, #493078);
+}
+
+.symbol {
+  color: #ddd6fe;
+  background: #ffffff12;
+}
+
+.c2 {
+  background: linear-gradient(135deg, #20354b, #475a91);
+}
+
+.c3 {
+  background: linear-gradient(135deg, #30204b, #7650b8);
+}
+
+/* Links para os projetos */
+.project-link {
+  color: #7041c5;
+}
+
+.project-link:hover {
+  color: #4c1d95;
+}
+
+/* Seção sobre o portal */
+.about {
+  background: linear-gradient(135deg, #f0edfa, #f5f7fb);
+  border-top: 1px solid #e3dcf5;
+}
+
+.about-logo {
+  background: linear-gradient(135deg, #30204b, #5b21b6);
+  color: #ddd6fe;
+  font-size: 1.15rem;
+  letter-spacing: -0.04em;
+}
+
+.about aside {
+  box-shadow: 0 5px 20px #30204b08;
+}
+
+.about aside a {
+  color: #7041c5;
+}
+
+.about aside a:hover {
+  color: #4c1d95;
+}
+
+/* Rodapé profissional */
+footer {
+  background: #101827;
+  border-top: 3px solid #7c3aed;
+}
+
+footer .logo {
+  box-shadow: none;
+}
+
+/* Acessibilidade: foco visível no teclado */
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 3px solid #a78bfa;
+  outline-offset: 3px;
+}
+
+/* Respeita a preferência por menos animações */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
