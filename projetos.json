@@ -97,10 +97,10 @@
 {
   "id": "PRE-2026-001",
   "slug": "projeto-predial-2-2026",
-  "titulo": "Projeto de Instalações Elétricas Prediais — Turma 2/2026",
+  "titulo": "Eficiência Energética e Segurança em Instalações Elétricas de Baixa Tensão",
   "area": "Instalações elétricas prediais",
   "situacao": "Em desenvolvimento",
-  "resumo": "Projetos técnicos desenvolvidos pelos alunos da área de instalações elétricas prediais. Consulte a pasta compartilhada para acompanhar a documentação, os registros de desenvolvimento, os cálculos e os materiais disponibilizados pela equipe.",
+  "resumo": "O projeto aborda o planejamento de instalações elétricas residenciais, a automação de iluminação com módulos Sonoff Zigbee e a temporização dos bebedouros do SENAI Mariano Ferraz. Busca promover maior segurança, eficiência energética e economia por meio de soluções técnicas aplicadas",
   "tecnologias": [
     "Instalações elétricas",
     "Comandos elétricos",
