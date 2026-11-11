@@ -7,7 +7,7 @@
   "titulo": "SIMULAÇÃO INDUSTRIAL COM FINDER OPTA ADVANCED E OPEN INDUSTRY PROJECT  v4.7-rc1",
   "area": "Automação industrial",
   "situacao": "Em desenvolvimento",
-  "resumo": "Projeto técnico desenvolvido pelos alunos da área industrial. Consulte a pasta pública para acompanhar a documentação, os registros de desenvolvimento, os códigos e os materiais do projeto.",
+  "resumo": "O projeto integra o controlador Finder Opta Advanced ao simulador industrial Open Industry Project (OIP), utilizando comunicação Modbus TCP, OPC UA e MQTT. Desenvolve testes práticos de automação, integração de entradas e saídas e simulação de processos industriais, contribuindo para o aprendizado de tecnologias da Indústria 4.0.",
   "tecnologias": [
     "Automação industrial",
     "Eletricidade",
